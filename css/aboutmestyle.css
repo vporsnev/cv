@@ -1,0 +1,27 @@
+body {
+  background-color: #dae1e7;
+  color: #27496d;
+  margin: 0;
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 110%;
+  overflow: auto;
+  min-width: 1261px;
+  }
+
+h1 {
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  letter-spacing: -2px;
+}
+
+.text {
+  margin: 200px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: -1px;
+}

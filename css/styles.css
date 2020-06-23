@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 110%;
+  overflow: auto;
+  min-width: 1261px;
+  }
+
+h1 {
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  letter-spacing: -2px;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+p {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+.companywebsite {
+  font-family: 'Montserrat', sans-serif;
+  color: #dae1e7;
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+.companywebsite:hover {
+  font-weight:bold;
+  text-decoration: underline;
+}
+
+.aboutmelink {
+  font-family: 'Montserrat', sans-serif;
+  color: #27496d;
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+.aboutmelink:hover {
+  font-weight:bold;
+  text-decoration: underline;
+}
+
+br {
+  line-height: 0;
+}
+
+td {
+  font-family: 'Montserrat', sans-serif;
+  color: #27496d;
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: -1px;
+  }
+
+.top {
+  background-color: #dae1e7;
+  color: #27496d;
+  height: 350px;
+  padding: 100px 50px 50px;
+  text-align: center;
+}
+
+.second {
+  background-color: #27496d;
+  color: #dae1e7;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.third {
+  background-color: #dae1e7;
+  color: #27496d;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  white-space: nowrap;
+}
+
+.footer {
+  background-color: #27496d;
+  color: #dae1e7;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.myphoto {
+  float: center;
+}
+
+.workname {
+  display: inline-table;
+  width: 50%;
+  text-align: center;
+}
+
+.workdiscription {
+  display: inline-table;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.education {
+  display: inline-table;
+  width: 50%;
+  text-align: center;
+}
+
+.languages {
+  display: inline-table;
+  width: 50%;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}
+
+.skillslist {
+  margin-left: 20%;
+  width: 50%;
+}
+
+.contact-me {
+  margin-bottom: 50;
+}
+
+.address {
+  display: inline-grid;
+  width: 30%;
+}
+
+.phone {
+  display: inline-grid;
+  width: 30%;
+}
+
+.email {
+  display: inline-grid;
+  width: 30%;
+}
+
+li {
+  list-style-type: '- ';
+  margin-right: 3px;
+}
