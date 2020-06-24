@@ -19,7 +19,7 @@ body, html {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.ibb.co/B39W8Rm/workspace.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/workspace.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
