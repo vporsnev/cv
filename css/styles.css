@@ -39,7 +39,8 @@ body, html {
 #aboutme {
   text-align: center;
   background-color: #8bbabb;
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .letter {
