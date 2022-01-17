@@ -113,3 +113,18 @@ body, html {
   width: 50%;
   text-align: center;
 }
+
+.education {
+  display: inline-table;
+  width: 50%;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}
+
+li {
+  list-style-type: '- ';
+  margin-right: 3px;
+}
