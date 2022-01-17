@@ -95,3 +95,15 @@ body, html {
 .contact {
   color: white;
 }
+
+#skills {
+  text-align: center;
+  background-color: #8bbabb;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.skillslist {
+  margin-left: 20%;
+  width: 50%;
+}
