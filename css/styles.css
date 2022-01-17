@@ -127,4 +127,5 @@ table {
 li {
   list-style-type: '- ';
   margin-right: 3px;
+  text-align: left;
 }
