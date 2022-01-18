@@ -57,6 +57,10 @@ body, html {
   height: 100%;
 }
 
+#experience-carousel {
+  height: 700px;
+}  
+
 .experience-image {
   width: 10%;
   margin: 20px;
