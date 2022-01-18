@@ -1,148 +1,226 @@
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: "Montserrat";
-  background-color: #333333;
-}
+<!DOCTYPE html>
+<html>
 
-.navbar {
-  padding-top: 20px;
-  padding-left: 30px;
-}
+<head>
+  <meta charset="utf-8">
+  <title>Vitaliy Porsnev</title>
 
-.navbar.scrolled {
-  background-color: #333333;
-  transition: background-color 200ms linear;
-}
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-.navbar-brand {
-  font-size: 1.25rem;
-}
+  <link rel="stylesheet" href="css/styles.css">
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/workspace.jpg);
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+  <!-- Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script>
+    $(function() {
+      $(document).scroll(function() {
+        var $nav = $(".navbar");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
 
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
+  <!-- Fontawesome CDN -->
+  <script src="https://kit.fontawesome.com/37ebeafa48.js" crossorigin="anonymous"></script>
 
-#aboutme {
-  text-align: center;
-  background-color: #8bbabb;
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
 
-.letter {
-  text-align: left;
-  padding: 5% 7%;
-  margin: 0;
-}
+<body>
+  <div class="hero-image">
+    <!-- Nav Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" st href="">Vitaliy Porsnev</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#workexpereince">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Title -->
+    <div class="hero-text">
+      <h1 style="font-size:50px">I am Vitaliy Porsnev</h1>
+      <p>Experienced in gastronomy, customer service, logistcs, sales and technology enthusiast.</p>
+    </div>
+  </div>
 
-#workexpereince {
-  text-align: center;
-  background-color: white;
-  color: black;
-  height: 500px;
-}
+  <!-- About Me -->
 
-.experience-image {
-  width: 10%;
-  margin: 20px;
-}
+  <section id="aboutme" class="shadow p-3 mb-5 bg-body">
+    <br>
+    <h2 class="quote"><i><i class="fas fa-quote-left"></i> There is no happiness except in the realization <br> that we have accomplished something. <i class="fas fa-quote-right"></i></i></h2>
+    <br>
+    - Henry Ford
+    <p class="letter">Hello,<br>
+      <br>
+      My name is Vitaliy Porsnev, I am 29 and I was born in Vilnius, Lithuania. Currently living in Munich, Germany.
+      <br>
+      Sociable and customer-oriented with strong leadership and time management skills. Experienced in the areas of
+      gastronomy, logistics, warehousing, sales and customer-service. Multi-language speaker and advanced computer user. Driven by acquiring knowledge, achieving goals and
+      international experience.
+      <br>
+      <br>
+      Interested in informational technologies, e-commerce and gaming industry. Beginner in web development.
+      <br>
+      <br>
+      Multi-language speaker and advanced computer user. Driven by acquiring knowledge, achieving goals and
+      international experience.
+    </p>
+    </div>
+  </section>
 
-.carousel-item {
-    height: 700px;
-    width: 100%;
-    padding: 7% 15%;
-}
+  <!-- Work Experience -->
 
-.carousel-text {
-  font-size: 18px;
-}
+  <section id="workexpereince">
+    <div id="experience-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h3 class="carousel-text">My first ever job was acting. I had a few roles in multiple advertisements and in a full-lenght film by Oscar-winning italian director Gabriele Salvatores called "Siberian Education".</h3>
+          <img class="experience-image" src="images/sibed.jpg" alt="sibed">
+          <em><a href="https://www.imdb.com/title/tt1697064/" target="_blank">Siberian Education</a></em>
+        </div>
+        <div class="carousel-item">
+          <h3 class="carousel-text">- receiving and processing incoming stock and materials
+            <br>
+            - picking and filling orders
+            <br>
+            - stocktaking
+            <br>
+            - organizing and systemizing stock.</h3>
+          <img class="experience-image" src="images/komandor.png" alt="komandorlogo">
+          <em>
+            <h4>Warehouse Manager</h4>
+            <a class="companywebsite" href="https://www.komandor.com/" target="_blank">Komandor</a>
+            <p>Vilnius, Lithuania<br>May-2012 - August-2013</p>
+          </em>
+        </div>
+        <div class="carousel-item">
+          <h3 class="carousel-text">- sales of logistic services in Russian and Kazakhstan markets</h3>
+          <img class="experience-image" src="images/portus-logo.png" alt="portuslogo">
+          <em>
+            <h4>Sales Representative</h4>
+            <a class="companywebsite" href="https://portus.lt/aboutus/" target="_blank">Portus Logistika</a>
+            <p>Vilnius, Lithuania<br>September-2013 - January-2014</p>
+          </em>
+        </div>
+        <div class="carousel-item">
+          <h3 class="carousel-text">- records management
+            <br>
+            - events organisation
+            <br>
+            - human resourcing
+            <br>
+            - issue-solving and maintaining relations with guests and suppliers
+            <br>
+            - social media management</h3>
+          <img class="experience-image" src="images/Zoes-Logo.png" alt="zoeslogo">
+          <em>
+            <h4>Restaurant Manager</h4>
+            <a class="companywebsite" href="https://www.zoesbargrill.com" target="_blank">Nordic Entertainment</a>
+            <p>Vilnius, Lithuania<br>May-2014 - September-2017</p>
+          </em>
+        </div>
+        <div class="carousel-item">
+          <h3 class="carousel-text">- records management
+            <br>
+            - events organisation
+            <br>
+            - issue-solving and maintaining relations with guests and suppliers
+            <br>
+            - social media management</h3>
+          <img class="experience-image" src="images/grey_logo.png" alt="greylogo">
+          <em>
+            <h4>Restaurant Manager</h4>
+            <a class="companywebsite" href="https://www.restoranasgrey.lt" target="_blank">Juta Jazz Kava</a>
+            <p>Vilnius, Lithuania<br>October-2017 - April-2018</p>
+          </em>
+        </div>
+        <div class="carousel-item">
+          <h3 class="carousel-text">- overseeing customer service in Food & Beverage department by the high standards
+            <br>
+            - events organisation
+            <br>
+            - staff coaching</h3>
+          <img class="experience-image" src="images/hilton-hotels-logo.jpg" alt="hiltonlogo">
+          <em>
+            <h4>Chef De Rang</h4>
+            <a class="companywebsite" href="https://www3.hilton.com/en/hotels/bavaria/hilton-munich-park-MUCHITW/index.html" target="_blank">Hilton Munich Park</a>
+            <p>Munich, Germany<br>June-2018 - Present</p>
+          </em>
+        </div>
+        <a class="carousel-control-prev" href="#experience-carousel" role="button" data-slide="prev">
+          <i class="fas fa-chevron-circle-left"></i></a>
+        <a class="carousel-control-next" href="#experience-carousel" role="button" data-slide="next">
+          <i class="fas fa-chevron-circle-right"></i></a>
+      </div>
+    </div>
+  </section>
 
-.fa-chevron-circle-right {
-  color: black;
-  font-size: 20px;
-  margin: 0;
-  position: absolute;
-  top: 35%;
-}
+  <!-- Skills -->
 
-.fa-chevron-circle-left {
-  color: black;
-  font-size: 20px;
-  margin: 0;
-  position: absolute;
-  top: 35%;
-}
+  <section id="skills" class="shadow p-3 mb-5 bg-body">
+    <div class="skills">
+      <div class="education">
+        <h3>Education</h3>
+        <p>Business Management And Administration
+          <br> Vilnius University
+          <br> Vilnius, Lithuania</p>
+      </div>
 
-#footer {
-  text-align: center;
-  background-color: #333333;
-  color: white;
-  padding-bottom: 20px;
-}
+      <div class="languages">
+        <h3>Languages</h3>
+        <table cellspacing="3" , cellpadding="5">
+          <tr>
+            <td>Russian ⦿⦿⦿⦿⦿</td>
+            <td>English ⦿⦿⦿⦿⦾</td>
+          </tr>
+          <tr>
+            <td>Lithuanian ⦿⦿⦿⦿⦿</td>
+            <td>German ⦿⦿⦿⦾⦾</td>
+          </tr>
+        </table>
+      </div>
 
-.socialicon {
-  font-size: 2rem;
-  margin: 50px 5px 15px 5px;
-}
+      <div class="skillslist">
+        <h3>Skills</h3>
+        <ul>
+          <li> customer service
+          <li> advanced computer user (CSS, HTML; MS Office; Wordpress; Social Media etc.)
+          <li> time management
+          <li> staff management
+          <li> leadership
+        </ul>
+      </div>
+    </div>
+  </section>
 
-.contact {
-  color: white;
-}
+  <!-- Footer -->
 
-#skills {
-  text-align: center;
-  background-color: #8bbabb;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  position: relative;
-  height: 500px;
-}
+  <footer id="footer">
 
-.languages {
-  position: absolute;
-  top: 100px;
-  left: 150px;
-  text-align: center;
-}
+    <a class="contact" href="https://www.facebook.com/vitalij.porshnev/" target="_blank"><i class="socialicon fab fa-facebook-f"></i></a> <a class="contact" href="https://www.linkedin.com/in/vitalijporshnev/" target="_blank"><i
+        class="socialicon fab fa-linkedin"></i></a> <a class="contact" href="mailto:v.porshnev@gmail.com" target="_blank"><i class="socialicon fas fa-envelope"></i></a>
+    <p>© Copyright 2020 Vitaliy Porsnev</p>
 
-.education {
-  position: absolute;
-   top: 100px;
-   right: 150px;
-  text-align: center;
-}
+  </footer>
+</body>
 
-.skillslist {
- position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-}
-
-table {
-  margin: auto;
-}
-
-ul {
-  display:inline-block;
-}
-
-li {
-  list-style-type: '- ';
-  text-align: left;
-}
+</html>
