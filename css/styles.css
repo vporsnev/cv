@@ -76,11 +76,13 @@ body, html {
 .fa-chevron-circle-right {
   color: black;
   font-size: 3rem;
+  position: fixed;
 }
 
 .fa-chevron-circle-left {
   color: black;
   font-size: 3rem;
+  position: fixed;
 }
 
 #footer {
