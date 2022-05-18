@@ -302,4 +302,12 @@ bi-circle-fill {
   .worktable {
     margin-top: 2em
   }
+    .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(../images/IMG_6969.jpg);
+  }
+}
+@media (min-width: 501px) {
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(../images/IMG_6968.jpg);
+}
 }
