@@ -292,6 +292,10 @@ bi-circle-fill {
   .navigation-list>li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+  
+  .nav-link {
+    padding-right: 15px;
+  }
 
   .workname {
     width: 10em;
